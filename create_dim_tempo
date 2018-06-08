@@ -1,0 +1,44 @@
+-- 
+-- Script criação DIM_TEMPO em MS SQL Server
+-- formatado por Duncan Ruiz em 2013
+
+
+CREATE TABLE [dbo].[DIM_TEMPO](
+	[PK_Data] [datetime] NOT NULL,
+	[Data_Nome] [nvarchar](50) NULL,
+	[Ano] [datetime] NULL,
+	[Ano_Nome] [nvarchar](50) NULL,
+	[Semestre] [datetime] NULL,
+	[Semestre_Nome] [nvarchar](50) NULL,
+	[Trimestre] [datetime] NULL,
+	[Trimestre_Nome] [nvarchar](50) NULL,
+	[Mês] [datetime] NULL,
+	[Mês_Nome] [nvarchar](50) NULL,
+	[Semana] [datetime] NULL,
+	[Semana_Nome] [nvarchar](50) NULL,
+	[Dia_Do_Ano] [int] NULL,
+	[Dia_Do_Ano_Nome] [nvarchar](50) NULL,
+	[Dia_Do_Semestre] [int] NULL,
+	[Dia_Do_Semestre_Nome] [nvarchar](50) NULL,
+	[Dia_Do_Trimestre] [int] NULL,
+	[Dia_Do_Trimestre_Nome] [nvarchar](50) NULL,
+	[Dia_Do_Mês] [int] NULL,
+	[Dia_Do_Mês_Nome] [nvarchar](50) NULL,
+	[Dia_Da_Semana] [int] NULL,
+	[Dia_Da_Semana_Nome] [nvarchar](50) NULL,
+	[Semana_Do_Ano] [int] NULL,
+	[Semana_Do_Ano_Nome] [nvarchar](50) NULL,
+	[Mês_Do_Ano] [int] NULL,
+	[Mês_Do_Ano_Nome] [nvarchar](50) NULL,
+	[Mês_Do_Semestre] [int] NULL,
+	[Mês_Do_Semestre_Nome] [nvarchar](50) NULL,
+	[Mês_Do_Trimestre] [int] NULL,
+	[Mês_Do_Trimestre_Nome] [nvarchar](50) NULL,
+	[Trimestre_Do_Ano] [int] NULL,
+	[Trimestre_Do_Ano_Nome] [nvarchar](50) NULL,
+	[Trimestre_Do_Semestre] [int] NULL,
+	[Trimestre_Do_Semestre_Nome] [nvarchar](50) NULL,
+	[Semestre_Do_Ano] [int] NULL,
+	[Semestre_Do_Ano_Nome] [nvarchar](50) NULL,
+ CONSTRAINT [PK_DIM_TEMPO] PRIMARY KEY (	[PK_Data] ASC )
+ )
