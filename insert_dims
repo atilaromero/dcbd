@@ -1,0 +1,62 @@
+insert into DIM_GRUPO
+select distinct
+NUMERO_GRUPO,
+NOME_GRUPO
+from datapoa.dbo.dcbd2018I_04;
+
+insert into DIM_PESSOA
+select distinct
+NUMERO_PESSOA,
+NOME_PESSOA
+from datapoa.dbo.dcbd2018I_04;
+
+--DATA_DESPESA,           -- DIM_TEMPO
+
+insert into DIM_EMPENHO
+select distinct
+TIPO_EMPENHO,
+DESCRICAO_EMPENHO,
+NUMERO_EMPENHO
+from datapoa.dbo.dcbd2018I_04;
+
+insert into DIM_PROCESSO_CONTRATACAO
+select distinct
+CODIGO_PROCESSO_CONTRATACAO,
+DESCRICAO_PROCESSO_CONTRATACAO
+from datapoa.dbo.dcbd2018I_04;
+
+insert into DIM_ORGAO
+select distinct
+NUMERO_ORGAO ,
+CODIGO_ORGAO,
+NOME_ORGAO
+from datapoa.dbo.dcbd2018I_04;
+
+insert into DIM_
+select distinct
+NUMERO_UNIDADE_ORCAMENTARIA ,
+-- CODIGO_UNIDADE_ORCAMENTARIA numeric(4) NOT NULL,
+-- NOME_UNIDADE_ORCAMENTARIA varchar(255) NOT NULL,
+from datapoa.dbo.dcbd2018I_04;
+
+insert into DIM_
+select distinct
+NUMERO_PROJETO_ATIVIDADE ,
+-- CODIGO_PROJETO_ATIVIDADE numeric(4) NOT NULL,
+-- NOME_PROJETO_ATIVIDADE varchar(255) NOT NULL,
+from datapoa.dbo.dcbd2018I_04;
+
+insert into DIM_
+select distinct
+NUMERO_RUBRICA ,
+-- CODIGO_RUBRICA numeric(12) NOT NULL,
+-- NOME_RUBRICA varchar(255) NOT NULL,
+from datapoa.dbo.dcbd2018I_04;
+
+insert into DIM_
+select distinct
+NUMERO_VINCULO_ORCAMENTO ,
+-- CODIGO_VINCULO_ORCAMENTO numeric(4) NOT NULL,
+-- NOME_VINCULO_ORCAMENTO varchar(255) NOT NULL,
+from datapoa.dbo.dcbd2018I_04;
+
